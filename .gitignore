@@ -1,0 +1,14 @@
+# Ignore temporary files
+*.tmp
+*.log
+*.bak
+*.swp
+
+# Ignore compiled files
+*.o
+*.obj
+*.exe
+*.out
+
+# Ignore dependency directories
+/node_modules/
