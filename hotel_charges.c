@@ -1,4 +1,6 @@
+// This file calculates hotel charges based on user input.
 #include <stdio.h>
+
 struct hotel 
 {
     char name[50];
