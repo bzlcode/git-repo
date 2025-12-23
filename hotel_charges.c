@@ -1,4 +1,4 @@
-// This file calculates hotel charges based on user input.
+// This file manages hotel data, sorting and filtering by grade and average charge.
 #include <stdio.h>
 
 struct hotel 
