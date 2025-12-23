@@ -1,0 +1,31 @@
+<HTML>
+    <HEAD> <TITLE>Login Text box</TITLE>
+        <script type="text/javascript">
+            function login()
+            {
+                let s=document.getElementById("username").value;
+                let p=document.getElementById("pswd").value;
+                if(s==="hello" && p==="1234")
+                alert("login success");
+                else
+                alert("login failed");
+            }
+        </script>
+    </HEAD>
+
+    <body align="center" style="background-color:ivory; color:rgb(44, 108, 68)">
+    <h3>User login</h3>
+    <div style="background-color:rgb(234, 234, 230);">
+    <form>
+        <label for="username">Username</label>
+        <input type ="text" id="username" placeholder="Enter username"><br><br>
+        <label for="pswd">password</label>
+        <input type="password" placeholder="Enter password" id="pswd"><br><br>
+
+        <label for="email">email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" placeholder="Enter email" id="email"><br><br>
+        <label for="button">click here</label><br>
+        <input type="button" value="submit" id="button" onclick="login()">
+        </FORM></div>
+</BODY>
+</HTML>

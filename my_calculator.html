@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>calculator </title>
+        <script type="text/javascript">
+           function display(button)
+           {
+            const txtval=document.getElementById("txt");
+            txtval.value+=button.value.trim();
+            }
+          function calculate()
+          {
+            var exp=document.getElementById("txt").value.trim();
+            const mat = exp.match(/^(\d+)\s*([+\-*/])\s*(\d+)$/);
+            if (mat) {
+                var num1=parseInt(mat[1]);
+                var op=mat[2];
+                var num2=parseInt(mat[3]);
+               
+        if (op == "+") {
+          document.getElementById("result").value = num1 + num2; 
+        }
+                else if (op == "-"){
+                    document.getElementById("result").value=num1-num2; }
+                    else if (op=="*") {
+                        document.getElementById("result").value=num1*num2; }
+                        else if(op=="/") {
+                            document.getElementById("result").value=num1/num2; }
+                        else {
+                            document.getElementById("result").value="Invalid operation"; }
+                }
+                else {
+                    document.getElementById("result").value="Invalid expression"; }
+                }
+
+        </script>
+
+        <style>
+            #one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#zero{
+                background-color:rgb(180, 229, 145);
+                width:50px;
+                height:30px;
+                border-radius:5px;
+                border: 2px solid rgb(38, 105, 41);
+            }
+            #one:hover,#two:hover,#three:hover,#four:hover,#five:hover,#six:hover,#seven:hover,#eight:hover,
+            #nine:hover,#zero:hover,#add:hover,#sub:hover,#multi:hover,#div:hover,#clear:hover,#equal:hover{
+                background-color:rgb(136, 220, 76);
+                width:50px;
+                height:30px;
+                cursor:pointer;
+                transition:ease-in-out 0.3s;
+            }
+
+            #add,#sub,#multi,#div,#clear,#equal{
+                background-color:rgb(143, 196, 146);
+                width:50px;
+                height:30px;
+                border-radius:5px;
+            }
+            #txt,#result{
+                background-color: rgb(230, 249, 216);
+                width:212px;
+                border-radius:5px;
+            } 
+            
+            .divclass{
+                margin-left:635px; 
+                background-color:rgb(232, 255, 215);
+                width:215px;
+                height:180px;
+                padding:10px; 
+                border: 4px solid rgb(30, 83, 33);
+                border-radius:8px;
+                border-top-width:8px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h2 align="center" style="color:rgb(22, 89, 22)"><u>calculator</u></h2>
+        <form>
+        <div class="divclass" align="center">
+            <br>
+            <input type="text" id="txt" placeholder="Enter" readonly ><br>
+            
+            <input type="text" id="result" placeholder="0" readonly><br>
+
+            <input type="button" id="one" value="1" onclick="display(this)">
+            <input type="button" id="two" value="2" onclick="display(this)">
+            <input type="button" id="three" value="3" onclick="display(this)">
+
+            <input type="button" id="add" value="+" onclick="display(this)"><br>
+
+            <input type="button" id="four" value="4" onclick="display(this)">
+            <input type="button" id="five" value="5" onclick="display(this)">
+            <input type="button" id="six" value="6" onclick="display(this)">
+
+            <input type="button" id="sub" value="-"  onclick="display(this)"><br>
+
+            <input type="button" id="seven" value="7" onclick="display(this)">
+            <input type="button" id="eight" value="8" onclick="display(this)">
+            <input type="button" id="nine" value="9" onclick="display(this)">
+
+            <input type="button" id= "multi" value="*" onclick="display(this)"><br>
+
+            <input type="button" id="zero" value="0" onclick="display(this)">
+            <input type="reset" id="clear" value="clear">
+            <input type="button" id="equal" value="=" onclick="calculate()">
+
+            <input type="button" id="div" value="/"  onclick="display(this)">
+
+        </div>
+        </form>
+    </body>
+</html>
