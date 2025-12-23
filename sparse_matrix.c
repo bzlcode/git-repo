@@ -1,3 +1,4 @@
+// This file performs transpose and addition on sparse matrices.
 #include<stdio.h>
 int i,j,k,m,n;
 int M[10][10],S[10][10],S2[20][20];

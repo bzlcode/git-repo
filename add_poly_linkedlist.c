@@ -1,3 +1,4 @@
+// This file performs polynomial addition using linked lists.
 #include<stdio.h>
 #include<stdlib.h>
 struct node{

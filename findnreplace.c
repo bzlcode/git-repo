@@ -1,3 +1,4 @@
+// This file finds and replaces a substring within a string.
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>

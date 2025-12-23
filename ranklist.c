@@ -1,3 +1,4 @@
+// This file generates a rank list based on student scores.
 #include<stdio.h>
 struct stud
 {

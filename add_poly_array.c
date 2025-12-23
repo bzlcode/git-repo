@@ -1,3 +1,4 @@
+// This file performs polynomial addition using arrays.
 #include<stdio.h>
 struct poly{
     int coeff;

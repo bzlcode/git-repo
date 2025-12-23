@@ -1,3 +1,4 @@
+// This file provides a menu-driven program for matrix operations.
 #include <stdio.h>
 /*displaying*/
 void disp(int C[10][10],int m, int n)

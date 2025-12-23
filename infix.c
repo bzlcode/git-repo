@@ -1,3 +1,4 @@
+// This file converts infix expressions to postfix expressions.
 #include<stdio.h>
 #include<math.h>
 #include<ctype.h>
