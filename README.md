@@ -1,6 +1,6 @@
 # HELLO WORLD
 
-## Welcome to My Code Repository
+## Welcome to simple codes Repository
 
 This repository contains a collection of beginner-level code snippets and projects.
 
